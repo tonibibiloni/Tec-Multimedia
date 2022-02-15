@@ -1,0 +1,55 @@
+Herramientas a instalar 
+
+
+Sublime Text
+
+Chrome,
+Git. Verificar version
+(base) toni-3:~ tonibibiloni2$ git --version
+git version 2.15.0
+
+(podemos acceder al libro https://git-scm.com/book/es/v2)
+(leer la guia https://docs.github.com/en/get-started/quickstart/hello-world)
+
+Node JS. 
+tenemos que asegurarnos de que /usr/local/bin esté en nuestro PATH
+(base) toni-3:~ tonibibiloni2$ echo $PATH
+/Users/tonibibiloni2/Applications/anaconda3/bin:/Users/tonibibiloni2/Applications/anaconda3/condabin:/Applications/anaconda/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+Verificar version
+
+Verificar versión
+(base) toni-3:~ tonibibiloni2$ node --version
+v16.14.0
+
+Instalación de npm,  gestor de paquetes de node, 
+(base) toni-3:~ tonibibiloni2$ npm --version
+8.3.1
+
+Instalar la sincronización del navegador https://browsersync.io/
+sudo npm install -g browser-sync
+
+-g solo significa globalmente, no solo para nuestro usuario sino para todos los usuarios
+
+VAMOS A PROBARLO TODO 
+creamos un directorio llamado, test-site
+Con Sublime text creamos y guardamos una pagina index.html   (truco escribimos html y luego control+espacio, nos genera la estructura del fichero)
+
+Para la sincronización del navegador vamos a tener activo un pequeño servidor. Y al mismo tiempo que editamos nuestra página actualizará todo lo que estamos editando directamente en el navegador.
+
+(base) toni-3:~ tonibibiloni2$ cd test_site/
+(base) toni-3:test_site tonibibiloni2$ ls
+index.html
+(base) toni-3:test_site tonibibiloni2$ browser-sync start --server --directory --files "*"
+[Browsersync] Access URLs:
+ -------------------------------------
+       Local: http://localhost:3000
+    External: http://192.168.1.24:3000
+ -------------------------------------
+          UI: http://localhost:3001
+ UI External: http://localhost:3001
+ -------------------------------------
+[Browsersync] Serving files from: ./
+[Browsersync] Watching files...
+[Browsersync] Reloading Browsers... 
+
+ En Chrome vamos a http://localhost:3000/ y hacemos una prueba
