@@ -1,15 +1,11 @@
-## Welcome to GitHub Pages
+## Welcome to Tecnología Multimedia 
 
-You can use the [editor on GitHub](https://github.com/tonibibiloni/Tec-Multimedia/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Aqui vamos a tener todos los ejercicios, ejemplos presentados en las clases
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Muchos ejemplos estarán documentados con este estilo de MD
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
 # Header 1
 ## Header 2
